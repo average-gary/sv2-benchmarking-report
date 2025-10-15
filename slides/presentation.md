@@ -258,6 +258,9 @@ _Note: v1.5.0 moved applications to separate repo; migration finalizing in next 
 1. **MARA Firmware** - tested in benchmarking
 2. **Braiins OS** - tested in benchmarking
 
+![MARAFW](MARAFW-shares-sv2.png)
+![braiins](braiins-sv2.png)
+
 <!-- column: 1 -->
 
 ## Sv1 Compatibility Path
