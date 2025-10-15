@@ -367,6 +367,7 @@ _Note: v1.5.0 moved applications to separate repo; migration finalizing in next 
 - **Stratum V2 Docs**: stratumprotocol.org
 - **Stratum V2 Reference Implementation**: github.com/stratum-mining/stratum
 - **Benchmarking Tool**: github.com/stratum-mining/benchmarking-tool
+- **This Report**: github.com/average-gary/sv2-benchmarking-report
 - **eHash** - hashpool.dev
 
 # Thank You!
