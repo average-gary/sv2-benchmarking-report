@@ -1,0 +1,73 @@
+diff --git a/custom-configs/sri-roles/config-a/jdc-config-a-docker-example.toml b/custom-configs/sri-roles/config-a/jdc-config-a-docker-example.toml
+index 83c2905..a515d30 100644
+--- a/custom-configs/sri-roles/config-a/jdc-config-a-docker-example.toml
++++ b/custom-configs/sri-roles/config-a/jdc-config-a-docker-example.toml
+@@ -39,7 +39,7 @@ coinbase_outputs = [
+     #{ output_script_type = "P2PKH", output_script_value = "0372c47307e5b75ce365daf835f226d246c5a7a92fe24395018d5552123354f086" },
+     #{ output_script_type = "P2SH", output_script_value = "00142ef89234bc95136eb9e6fee9d32722ebd8c1f0ab" },
+     #{ output_script_type = "P2WSH", output_script_value = "00142ef89234bc95136eb9e6fee9d32722ebd8c1f0ab" },
+-    { output_script_type = "P2WPKH", output_script_value = "036adc3bdf21e6f9a0f0fb0066bf517e5b7909ed1563d6958a10993849a7554075" },
++    { output_script_type = "P2WPKH", output_script_value = "03ab530e7f77687edc801edbebbd8039b7da9d82e71f8c048ff5a6fcf9ea62c61c" },
+     #{ output_script_type = "P2TR", output_script_value = "036adc3bdf21e6f9a0f0fb0066bf517e5b7909ed1563d6958a10993849a7554075" },
+ ]
+
+@@ -54,7 +54,7 @@ authority_pubkey = "9auqWEzQDVyd2oe1JVGFLMLHZtCo2FFqZwtKA5gd9xbuEu7PH72"
+ pool_address = "10.5.0.4:34254"
+ jd_address = "10.5.0.5:34264"
+ # Pool signature (string to be included in coinbase tx)
+-pool_signature = "Stratum V2 SRI Pool"
++pool_signature = "Sv2 AvgGarysMod"
+
+ # [[upstreams]]
+ # authority_pubkey = "2di19GHYQnAZJmEpoUeP7C3Eg9TCcksHr23rZCC83dvUiZgiDL"
+diff --git a/custom-configs/sri-roles/config-a/jds-config-a-docker-example.toml b/custom-configs/sri-roles/config-a/jds-config-a-docker-example.toml
+index 080d3f7..07bef69 100644
+--- a/custom-configs/sri-roles/config-a/jds-config-a-docker-example.toml
++++ b/custom-configs/sri-roles/config-a/jds-config-a-docker-example.toml
+@@ -11,7 +11,7 @@ coinbase_outputs = [
+     #{ output_script_type = "P2PKH", output_script_value = "0372c47307e5b75ce365daf835f226d246c5a7a92fe24395018d5552123354f086" },
+     #{ output_script_type = "P2SH", output_script_value = "00142ef89234bc95136eb9e6fee9d32722ebd8c1f0ab" },
+     #{ output_script_type = "P2WSH", output_script_value = "00142ef89234bc95136eb9e6fee9d32722ebd8c1f0ab" },
+-    { output_script_type = "P2WPKH", output_script_value = "036adc3bdf21e6f9a0f0fb0066bf517e5b7909ed1563d6958a10993849a7554075" },
++    { output_script_type = "P2WPKH", output_script_value = "03ab530e7f77687edc801edbebbd8039b7da9d82e71f8c048ff5a6fcf9ea62c61c" },
+     #{ output_script_type = "P2TR", output_script_value = "036adc3bdf21e6f9a0f0fb0066bf517e5b7909ed1563d6958a10993849a7554075" },
+ ]
+
+diff --git a/custom-configs/sri-roles/config-a/pool-config-a-docker-example.toml b/custom-configs/sri-roles/config-a/pool-config-a-docker-example.toml
+index 29c1458..29a002f 100644
+--- a/custom-configs/sri-roles/config-a/pool-config-a-docker-example.toml
++++ b/custom-configs/sri-roles/config-a/pool-config-a-docker-example.toml
+@@ -14,12 +14,12 @@ coinbase_outputs = [
+     #{ output_script_type = "P2PKH", output_script_value = "0372c47307e5b75ce365daf835f226d246c5a7a92fe24395018d5552123354f086" },
+     #{ output_script_type = "P2SH", output_script_value = "00142ef89234bc95136eb9e6fee9d32722ebd8c1f0ab" },
+     #{ output_script_type = "P2WSH", output_script_value = "00142ef89234bc95136eb9e6fee9d32722ebd8c1f0ab" },
+-    { output_script_type = "P2WPKH", output_script_value = "036adc3bdf21e6f9a0f0fb0066bf517e5b7909ed1563d6958a10993849a7554075" },
++    { output_script_type = "P2WPKH", output_script_value = "03ab530e7f77687edc801edbebbd8039b7da9d82e71f8c048ff5a6fcf9ea62c61c" },
+     #{ output_script_type = "P2TR", output_script_value = "036adc3bdf21e6f9a0f0fb0066bf517e5b7909ed1563d6958a10993849a7554075" },
+ ]
+
+ # Pool signature (string to be included in coinbase tx)
+-pool_signature = "Stratum V2 SRI Pool"
++pool_signature = "Sv2 AvgGarysMod"
+
+ # Template Provider config
+ # Local TP (this is pointing to localhost so you must run a TP locally for this configuration to work)
+diff --git a/custom-configs/sri-roles/config-a/tproxy-config-a-docker-example.toml b/custom-configs/sri-roles/config-a/tproxy-config-a-docker-example.toml
+index 2ce241e..eb3555e 100644
+--- a/custom-configs/sri-roles/config-a/tproxy-config-a-docker-example.toml
++++ b/custom-configs/sri-roles/config-a/tproxy-config-a-docker-example.toml
+@@ -26,7 +26,7 @@ coinbase_reward_sat = 5_000_000_000
+ # Difficulty params
+ [downstream_difficulty_config]
+ # hashes/s of the weakest miner that will be connecting (e.g.: 10 Th/s = 10_000_000_000_000.0)
+-min_individual_miner_hashrate = 10_000_000_000_000.0
++min_individual_miner_hashrate = 100_000_000_000_000.0
+ # target number of shares per minute the miner should be sending
+ shares_per_minute = 6.0
+
+@@ -34,4 +34,4 @@ shares_per_minute = 6.0
+ # interval in seconds to elapse before updating channel hashrate with the pool
+ channel_diff_update_interval = 60
+ # estimated accumulated hashrate of all downstream miners (e.g.: 10 Th/s = 10_000_000_000_000.0)
+-channel_nominal_hashrate = 10_000_000_000_000.0
++channel_nominal_hashrate = 100_000_000_000_000.0
